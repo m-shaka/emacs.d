@@ -4,15 +4,16 @@
   :)
 (cask-initialize)
 
-; intero
+;; haskell
 (add-hook 'haskell-mode-hook 'intero-mode)
+(custom-set-variables '(haskell-stylish-on-save t))
 
-; make enable clipboard copy
+;; make enable clipboard copy
 (cond (window-system
   (setq x-select-enable-clipboard t)
   ))
 
-; do not create backup file
+;; do not create backup file
 (setq make-backup-files nil)
 (setq auto-save-default nil)
 
@@ -40,6 +41,11 @@
 
 (load-theme 'dracula t)
 
-; magit
+;; magit
 (require 'magit)
 (define-key global-map (kbd "M-g") 'magit-status)
+
+;; multi-term
+(require 'multi-term)
+(setq multi-term-program (executable-find "zsh"))
+

@@ -27,4 +27,4 @@
 (depends-on "intero")
 (depends-on "restart-emacs")
 (depends-on "dracula-theme")
-(depends-on "magit")
+(depends-on "multi-term")
