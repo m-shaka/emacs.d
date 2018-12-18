@@ -1,4 +1,7 @@
-(require 'cask)
+(if (equal system-type 'darwin)
+    (require 'cask)
+  (require 'cask "~/.cask/cask.el")
+  :)
 (cask-initialize)
 
 ; intero
