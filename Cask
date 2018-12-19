@@ -29,3 +29,4 @@
 (depends-on "dracula-theme")
 (depends-on "multi-term")
 (depends-on "yaml-mode")
+(depends-on "markdown-mode")
