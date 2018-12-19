@@ -67,3 +67,6 @@
          ("\\.markdown\\'" . markdown-mode))
   :init (setq markdown-command "multimarkdown"))
 (setq markdown-command "multimarkdown")
+
+;; assign C-h delete-backward-char
+(keyboard-translate ?\C-h ?\C-?)
