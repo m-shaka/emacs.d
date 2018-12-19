@@ -28,3 +28,4 @@
 (depends-on "restart-emacs")
 (depends-on "dracula-theme")
 (depends-on "multi-term")
+(depends-on "yaml-mode")
