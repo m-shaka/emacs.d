@@ -4,9 +4,13 @@
   :)
 (cask-initialize)
 
+(require 'flycheck)
+
 ;; haskell
+(require 'intero)
 (add-hook 'haskell-mode-hook 'intero-mode)
 (custom-set-variables '(haskell-stylish-on-save t))
+(flycheck-add-next-checker 'intero '(warning . haskell-hlint))
 
 ;; make enable clipboard copy
 (cond (window-system
