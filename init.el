@@ -70,3 +70,8 @@
 
 ;; assign C-h delete-backward-char
 (keyboard-translate ?\C-h ?\C-?)
+
+;; buffer
+(global-set-key [(control x) (k)] 'kill-this-buffer)
+(global-set-key "\C-x\C-b" 'buffer-menu)
+
