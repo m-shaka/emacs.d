@@ -75,3 +75,10 @@
 (global-set-key [(control x) (k)] 'kill-this-buffer)
 (global-set-key "\C-x\C-b" 'buffer-menu)
 
+;; open multi-term on right window
+(global-set-key (kbd "<f12>") (lambda ()
+                               (interactive)
+                               (split-window-right)
+			       (other-window 1)
+                               (multi-term)))
+
