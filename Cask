@@ -30,3 +30,5 @@
 (depends-on "multi-term")
 (depends-on "yaml-mode")
 (depends-on "markdown-mode")
+(depends-on "counsel")
+(depends-on "find-file-in-project")

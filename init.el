@@ -82,3 +82,8 @@
 			       (other-window 1)
                                (multi-term)))
 
+
+(ivy-mode 1)
+(counsel-mode 1)
+(require 'find-file-in-project)
+
