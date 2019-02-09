@@ -78,8 +78,6 @@
 ;; open multi-term on right window
 (global-set-key (kbd "\C-ct") (lambda ()
                                (interactive)
-                               (split-window-right)
-			       (other-window 1)
                                (multi-term)))
 
 
