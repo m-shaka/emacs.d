@@ -32,3 +32,6 @@
 (depends-on "markdown-mode")
 (depends-on "counsel")
 (depends-on "find-file-in-project")
+(depends-on "go-mode")
+(depends-on "company-go")
+
